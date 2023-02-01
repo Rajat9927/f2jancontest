@@ -46,6 +46,10 @@
   
   #info {
     font-size: 1rem;
+    color: white;
+  }
+  p,h2 {
+    color: white;
   }
   
   /* dice Image container*/
@@ -53,11 +57,6 @@
     margin: 1.5rem;
   }
 
- 
- 
- 
- 
- 
  
  
 body {
@@ -72,6 +71,9 @@ body {
     background-color: whitesmoke;
     border-radius: 4px;
     font-size: 12px;
+    position:absolute;
+    left:40%;
+    top:70px;
 }
 
 #form h1 {
