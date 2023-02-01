@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F2 Jan Contest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <button id="img-1" onclick="openFormFunction()"><img class="img" src="img-1.jpg" alt="img1"></button>
+        <button id="img-2" onclick="displayFormInfoFunction()"><img class="img" src="img-2.png" alt="img2"></button>
+        <button id="img-3" onclick="displayDiceWthScore()"><img class="img" src="img-3.png" alt="img3"></button>
+        <button id="img-4" onclick="generateCouponCodeFunction()"><img class="img" src="img-4.png" alt="img4"></button>
+    </div>
+
+
+    <!-- Form -->
+    <div class="form-Group hidden" id="form">
+            <div class="input-control">
+                <label for="name">Name: </label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="input-control">
+                <label for="userName">UserName: </label>
+                <input type="text" id="userName" required>
+            </div>
+            <div class="input-control">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <button id="sumbitBtn" type="submit" onclick="submitFormInfoFunction()">Submit</button>
+    </div>
+    
+
+
+
+
+
+
+
+
+    <!-- Display Form info -->
+    <div class="displayformInfo hidden" id="displayInfo">
+        <h2>Your information is</h2><br>
+        <span id="info"></span><br><br>
+        <p>Click on next Image to continue procced</p>
+    </div>
+
+    <!-- dice image with score and attempts -->
+    <div class="diceWthScore hidden" id="diceWthScore">
+        <p>Attempts left : <span id="attemptsLeft">0</span></p><br>
+        <div>
+            <button id="dice-Image" onclick="diceClick()"><img class="img" src="dice-image.jpg"
+                    alt="diceImage"></button><br><br>
+            <p>Remaining Dice Clicks: <span id="diceClicks">3</span></p>
+            <p>Your total score is: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Congratulations and try again Image -->
+    <div>
+        <img class="hidden" id="congratsImage" src="congo img.jpg" width="1000px" alt="congratsImage">
+    </div>
+    <div>
+        <img class="hidden" id="tryAgainImage" src="oops img.png" alt="tryAgainImage">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

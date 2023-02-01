@@ -1,0 +1,100 @@
+* {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hidden class */
+  .hidden {
+    display: none;
+  }
+  
+  /* image styling */
+  .img {
+    width: 200px;
+    height: 200px;
+    margin: 0px;
+    border:2px;
+    border-style: solid;
+    border-radius: 10px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bae6d4;
+    border-radius: 10px;
+  }
+  
+  /* Form group and input elements */
+  .form-Group {
+    margin: 1.5rem;
+    font-size: 1.2rem;
+    
+  }
+  
+  #sumbitBtn {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+  
+  /* Display info */
+  #displayInfo {
+    margin: 2rem;
+  }
+  
+  #info {
+    font-size: 1rem;
+  }
+  
+  /* dice Image container*/
+  #diceWthScore {
+    margin: 1.5rem;
+  }
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+
+#form {
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #0f2027;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 90%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
